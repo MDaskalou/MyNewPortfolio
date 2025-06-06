@@ -81,6 +81,29 @@
         gap: 60px;
         padding: 40px 60px;
     }
+    .about-content {
+        text-align: left;
+        flex: 1;
+        max-width: 700px;      
+        padding-left: 0;       
+        margin-right: auto;    
+    }
+    .about-content h2 {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .about-content h4 {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        max-width: 100%;
+    }
 
     .about-img {
         display: flex;
