@@ -34,11 +34,21 @@ export default function PreviousExperience() {
             </div>
 
             <div className="documents">
-                <a href="/pdf/Mikael-Daskalou-CV.pdf" target="_blank" className="doc-button">
-                    <i className="bx bxs-file-doc"></i> View CV
+                <a
+                    href={`${import.meta.env.BASE_URL}pdf/Mikael-Daskalou-CV.pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="doc-button"
+                >
+                    View CV
                 </a>
-                <a href="/pdf/Mikael-Daskalou-Personal-Letter.pdf" target="_blank" className="doc-button">
-                    <i className="bx bxs-file"></i> View Personal Letter
+                <a
+                    href={`${import.meta.env.BASE_URL}pdf/Mikael-Daskalou-Personal-Letter.pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="doc-button"
+                >
+                    View Personal Letter
                 </a>
             </div>
         </section>
