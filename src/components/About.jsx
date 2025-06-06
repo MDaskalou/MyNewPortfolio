@@ -7,7 +7,7 @@ export default function About() {
             <div className="container">
                 <div className="about-wrapper">
                     <div className="about-img">
-                        <img src="/img/Mikael.png" alt="Mikael portrait" className="about-profile-img" />
+                        <img src={`${import.meta.env.BASE_URL}img/Mikael.png`} />
                     </div>
                     <article className="about-content">
                         <h2>About <span>Me</span></h2>
