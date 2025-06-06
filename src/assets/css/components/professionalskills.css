@@ -1,0 +1,70 @@
+﻿.professional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.professional-skills {
+    background-color: #081b29;
+    color: aliceblue;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.sub-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+.professional-swiper-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* 🆕 extra spacing mellan slides */
+
+}
+
+.professional-card {
+    background: #0a2238;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
+    text-align: left;
+    width: 90%;
+    max-width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.professional-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px #0ef;
+}
+
+.professional-card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.professional-card h3 {
+    font-size: 20px;
+    color: #0ef;
+    margin-bottom: 10px;
+}
+
+.professional-card p {
+    font-size: 14px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}

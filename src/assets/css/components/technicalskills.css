@@ -1,0 +1,64 @@
+﻿/* Mobile First */
+.skills {
+    background-color: #081b29;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #0a2238;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+}
+
+.skill-card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    color: #0ef;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+/* Swiper container fix */
+.swiper {
+    padding-bottom: 30px; /* plats för pagination */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+}

@@ -1,0 +1,98 @@
+﻿.contact {
+    background-color: #081b29;
+    color: aliceblue;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-text h2 span {
+    color: #0ef;
+}
+
+.contact-text h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #0ef;
+}
+
+.contact-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-icons a i {
+    font-size: 24px;
+    color: #0ef;
+    transition: transform 0.3s;
+}
+
+.contact-icons a:hover i {
+    transform: scale(1.2);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #0a2238;
+    color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.send {
+    background-color: #0ef;
+    color: #081b29;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send:hover {
+    background-color: #00b8cc;
+}

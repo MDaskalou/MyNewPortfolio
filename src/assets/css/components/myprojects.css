@@ -1,0 +1,182 @@
+﻿.project-section {
+    background-color: #081b29;
+    padding: 60px 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.main-text h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.main-text h2 span {
+    color: #0ef;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
+    transition: transform 0.3s ease;
+    background-color: #0a2238;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), #00eeff);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .layer {
+    transform: translateY(0);
+}
+
+.layer h5 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.layer p {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.layer a i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.layer a i:hover {
+    color: #081b29;
+}
+.project-title-overlay {
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative; /* ✅ detta behövs för att absolut positionerade barn ska placera sig korrekt */
+
+}
+
+.github-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 238, 255, 0.1);
+    padding: 6px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.github-icon a {
+    color: #fff;
+    font-size: 22px;
+}
+
+.github-icon:hover {
+    background: #00eeff;
+}
+
+.github-icon:hover a {
+    color: #081b29;
+}
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #081b29;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.modal-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.modal-content a {
+    color: #0ef;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}

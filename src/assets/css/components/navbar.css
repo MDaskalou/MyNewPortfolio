@@ -1,0 +1,91 @@
+﻿/* Mobile-first style */
+.header {
+    background-color: #081b29;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* justera om det behövs */
+    height: 60px; /* se till att det matchar din design */
+}
+
+.logo {
+    margin: 0; /* 🔧 Ta bort onödig spacing */
+    padding: 0; /* 🔧 */
+    font-size: 1.5rem;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    width: 28px;
+    height: 3px;
+    background-color: #0ef;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links.open {
+    display: flex;
+    background-color: rgba(8, 27, 41, 0.95); /* halvtransparent blåsvart */
+    backdrop-filter: blur(4px); /* valfritt: glas-effekt */
+    position: absolute;
+    top: 60px; /* höjd från headern, justera vid behov */
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0ef;
+}
+
+.hamburger.active {
+    position: relative;
+    z-index: 1100;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}

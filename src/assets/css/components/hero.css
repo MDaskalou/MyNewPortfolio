@@ -1,0 +1,94 @@
+﻿/* === HERO SECTION: Mobile First === */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background: url('../../public/img/hero.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.home-content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.home-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.home-content span.text {
+    color: #0ef;
+    font-weight: bold;
+}
+
+.home-content p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.profile-img {
+    margin: 2rem 0;
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    object-position: center top; /* <-- ändra denna rad */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0ef;
+}
+
+.home-sci {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.home-sci a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+}
+
+.btn--primary {
+    background: #0ef;
+    color: #081b29;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 10px #0ef;
+}

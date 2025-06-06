@@ -1,0 +1,29 @@
+﻿.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #0ef;
+    color: #081b29;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #00c4cc;
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .scroll-to-top {
+        bottom: 16px;
+        right: 16px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
