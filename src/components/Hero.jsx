@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
 
             <div className="profile-img">
-                <img src="/img/mikael1.png" alt="profile" />
+                <img src={`${import.meta.env.BASE_URL}img/mikael1.png`} />
 
                 <div className="home-sci">
                     <a href="https://facebook.com"><i className="bx bxl-facebook-circle"></i></a>
