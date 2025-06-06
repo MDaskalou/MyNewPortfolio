@@ -7,6 +7,8 @@ export default function MyProjects() {
 
     const openModal = (project) => setActiveProject(project);
     const closeModal = () => setActiveProject(null);
+    
+    console.log(activeProject);
 
     return (
         <section id="projects" className="project-section">
@@ -28,15 +30,30 @@ export default function MyProjects() {
             </div>
 
             {activeProject && (
-                <div className="modal-overlay" onClick={closeModal}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <div className="modal-overlay">
+                    <div className="modal-content">
                         <button className="close-btn" onClick={closeModal}>×</button>
                         <img src={activeProject.image} alt={activeProject.title} />
                         <h3>{activeProject.title}</h3>
                         <p>{activeProject.description}</p>
-                        <a href={activeProject.link} target="_blank" rel="noreferrer">
-                            <i className="bx bxl-github"></i> View on GitHub
-                        </a>
+
+                        <div className="project-links">
+                            {activeProject.linkFrontend && (
+                                <a href={activeProject.linkFrontend} target="_blank" rel="noreferrer">
+                                    <i className="bx bxl-github"></i> Frontend Repo
+                                </a>
+                            )}
+                            {activeProject.linkBackend && (
+                                <a href={activeProject.linkBackend} target="_blank" rel="noreferrer">
+                                    <i className="bx bxl-github"></i> Backend Repo
+                                </a>
+                            )}
+                            {!activeProject.linkFrontend && !activeProject.linkBackend && activeProject.link && (
+                                <a href={activeProject.link} target="_blank" rel="noreferrer">
+                                    <i className="bx bxl-github"></i> View on GitHub
+                                </a>
+                            )}
+                        </div>
                     </div>
                 </div>
             )}

@@ -8,6 +8,8 @@ import MyProjects from './components/MyProjects'; // Importing the MyProjects co
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import PreviousExperience from "./components/PreviousExperience";
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
             <TechnicalSkills />
             <ProfessionalSkills />
             <MyProjects />
+            <PreviousExperience/>
             <Contact />
 
             <ScrollToTopButton /> 

@@ -68,3 +68,30 @@
     color: #e0e0e0;
     line-height: 1.6;
 }
+
+
+@media screen and (min-width: 768px) {
+    .professional-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .professional-swiper-wrapper {
+        padding: 0 40px;
+    }
+
+    .professional-card {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .professional-card h3 {
+        font-size: 22px;
+    }
+
+    .professional-card p {
+        font-size: 15px;
+    }
+}

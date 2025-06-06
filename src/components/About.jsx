@@ -1,5 +1,4 @@
 ﻿import React from "react";
-import aboutImg from "../assets/public/img/Mikael.png";
 import "../assets/css/components/about.css";
 
 export default function About() {
@@ -8,7 +7,7 @@ export default function About() {
             <div className="container">
                 <div className="about-wrapper">
                     <div className="about-img">
-                        <img src={aboutImg} alt="Mikael portrait" className="about-profile-img" />
+                        <img src="/img/Mikael.png" alt="Mikael portrait" className="about-profile-img" />
                     </div>
                     <article className="about-content">
                         <h2>About <span>Me</span></h2>

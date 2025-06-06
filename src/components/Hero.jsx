@@ -1,7 +1,6 @@
 ﻿import React from 'react';
 import "../assets/css/components/hero.css";
 import "../assets/css/utils/buttons.css";
-import mikael1 from "../assets/public/img/mikael1.png";
 import { Typewriter } from 'react-simple-typewriter';
 
 export default function Hero() {
@@ -30,21 +29,21 @@ export default function Hero() {
                     frontend HTML, CSS, and JavaScript. My goal is to become a Fullstack Developer and work on exciting
                     projects that make a difference.
                 </p>
+            </div>
 
-                <div className="profile-img">
-                    <img src={mikael1} alt="profile" />
-                </div>
+            <div className="profile-img">
+                <img src="/img/mikael1.png" alt="profile" />
 
                 <div className="home-sci">
                     <a href="https://facebook.com"><i className="bx bxl-facebook-circle"></i></a>
-                    <a href="https://instagram.com"><i className="bx bxl-instagram-alt"></i></a>
+                    <a href="https://www.instagram.com/mikael.bachata/"><i className="bx bxl-instagram-alt"></i></a>
                     <a href="https://linkedin.com/in/mikael-daskalou-46b424184"><i className="bx bxl-linkedin"></i></a>
                     <a href="https://github.com/MDaskalou"><i className="bx bxl-github"></i></a>
-                    <a href="#"><i className="bx bxl-whatsapp"></i></a>
+                    <a href="https://wa.me/46739598665"><i className="bx bxl-whatsapp"></i></a>
                 </div>
 
                 <a href="#about" className="btn btn--primary">More About Me</a>
             </div>
         </section>
-    )
+    );
 }

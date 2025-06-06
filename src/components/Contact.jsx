@@ -1,7 +1,30 @@
-﻿import React from "react";
+﻿import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "../assets/css/components/contact.css";
 
 export default function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_ij2za0c',      // <- din SERVICE ID
+            'template_ez9y4kv',     // <- din TEMPLATE ID
+            form.current,
+            'd5xXbjorq_2LdwFgg'      // <- din PUBLIC KEY
+        ).then(
+            () => {
+                alert("Message sent successfully!");
+                form.current.reset();
+            },
+            (error) => {
+                alert("Failed to send message, try again later.");
+                console.error(error);
+            }
+        );
+    };
+
     return (
         <section className="contact" id="contact">
             <div className="contact-text">
@@ -15,19 +38,12 @@ export default function Contact() {
                     <li><i className="bx bx-send"></i> mikael.dasklou@hotmail.com</li>
                     <li><i className="bx bx-phone"></i> 0739598665</li>
                 </ul>
-                <div className="contact-icons">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i className="bx bxl-facebook-circle"></i></a>
-                    <a href="https://www.instagram.com/mikael.bachata/" target="_blank" rel="noreferrer"><i className="bx bxl-instagram-alt"></i></a>
-                    <a href="https://www.linkedin.com/in/mikael-daskalou-46b424184" target="_blank" rel="noreferrer"><i className="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/MDaskalou" target="_blank" rel="noreferrer"><i className="bx bxl-github"></i></a>
-                    <a href="#"><i className="bx bxl-whatsapp"></i></a>
-                </div>
             </div>
 
             <div className="contact-form">
-                <form action="https://formspree.io/f/xvgabbrn" method="POST">
-                    <input type="text" name="name" placeholder="Enter Your Name" required />
-                    <input type="email" name="email" placeholder="Enter Your Email" required />
+                <form ref={form} onSubmit={sendEmail}>
+                    <input type="text" name="user_name" placeholder="Enter Your Name" required />
+                    <input type="email" name="user_email" placeholder="Enter Your Email" required />
                     <input type="text" name="subject" placeholder="Enter Your Subject" required />
                     <textarea name="message" rows="6" placeholder="Enter Your Message" required></textarea>
                     <input type="submit" value="Send Message" className="send" />

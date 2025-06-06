@@ -62,3 +62,36 @@
     align-items: stretch;
     height: auto;
 }
+
+@media screen and (min-width: 768px) {
+    .skills {
+        padding: 60px 80px;
+        text-align: left;
+    }
+
+    .sub-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .skills-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .skill-card {
+        flex: 0 0 250px; /* korten får fast bredd */
+        max-width: 250px;
+    }
+
+    .skill-card h3 {
+        font-size: 20px;
+    }
+
+    .skill-card p {
+        font-size: 15px;
+    }
+}

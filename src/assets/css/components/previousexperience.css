@@ -1,0 +1,72 @@
+﻿.experience-section {
+    background-color: #081b29;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.experience-item {
+    background-color: #0a2238;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.1);
+}
+.experience-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px #0ef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.documents {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.doc-button {
+    background-color: #0ef;
+    color: #081b29;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.doc-button:hover {
+    background-color: #00cde3;
+}
+
+@media screen and (min-width: 768px) {
+    .experience-item {
+        max-width: 700px;
+        margin: 0 auto 24px auto;
+        padding: 30px;
+    }
+
+    .experience-section {
+        padding: 80px 40px;
+    }
+
+    .documents {
+        gap: 30px;
+    }
+
+    .doc-button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .experience-item {
+        max-width: 900px;
+    }
+
+    .experience-section {
+        padding: 100px 60px;
+    }
+}

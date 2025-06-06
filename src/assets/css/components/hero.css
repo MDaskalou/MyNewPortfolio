@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 2rem 1rem;
-    background: url('../../public/img/hero.jpg') no-repeat center center/cover;
+    background: url('/img/hero.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +11,7 @@
     text-align: center;
     box-sizing: border-box;
 }
+
 
 .home-content {
     width: 100%;
@@ -91,4 +92,87 @@
     text-decoration: none;
     font-weight: 600;
     box-shadow: 0 0 10px #0ef;
+}
+
+.profile-img {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    object-position: center top;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0ef;
+}
+
+.home-sci {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.home-sci a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+}
+
+.btn--primary {
+    background: #0ef;
+    color: #081b29;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 10px #0ef;
+}
+
+/* === Desktop Layout (min 768px) === */
+@media screen and (min-width: 768px) {
+    .home {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 4rem 6rem;
+        text-align: left;
+        background-position: top;
+    }
+
+    .home-content {
+        max-width: 600px;
+        text-align: left;
+    }
+
+    .profile-img {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home-sci {
+        justify-content: center;
+    }
 }
