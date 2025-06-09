@@ -3,36 +3,44 @@
         icon: 'bx bx-brain',
         color: '#ff6b6b',
         title: 'Problem Solving',
-        desc: 'I have a strong ability to identify the root of complex issues and work through logical, evidence-based solutions.'
+        desc: 'I’m good at identifying the core of a problem and approaching challenges in a structured and logical way.' +
+            ' I aim to find practical and long-term solutions.'
     },
     {
         icon: 'bx bx-conversation',
         color: '#4dd599',
         title: 'Communication',
-        desc: 'Clear and concise communication is a cornerstone in my work. I adapt my style to different audiences.'
+        desc: 'I communicate clearly and adjust my style depending on the situation and the audience.' +
+            ' I value both active listening and being easy to understand.'
     },
     {
         icon: 'bx bx-group',
         color: '#fcbf49',
         title: 'Teamwork',
-        desc: 'I collaborate with cross-functional teams, share knowledge, and support colleagues to reach shared goals.'
+        desc: 'I collaborate with cross-functional teams, share knowledge, ' +
+            'and support colleagues to reach shared goals.'
     },
     {
         icon: 'bx bx-compass',
         color: '#3f8efc',
         title: 'Leadership',
-        desc: 'I take initiative and help teammates grow by offering guidance and feedback.'
+        desc: 'I take initiative and support others by offering feedback and guidance. ' +
+            'I try to contribute to a positive and encouraging environment where people can develop.'
+
+        
     },
     {
         icon: 'bx bx-refresh',
         color: '#bd7be2',
         title: 'Adaptability',
-        desc: 'I embrace change and quickly adjust to new tools and processes.'
+        desc: 'I adapt quickly to change and enjoy learning new tools and ways of working. ' +
+            'I see change as a chance to grow and improve.'
     },
     {
         icon: 'bx bx-target-lock',
         color: '#f8961e',
         title: 'Time Management',
-        desc: 'I prioritize effectively, balance tasks, and deliver results on time.'
+        desc: 'I plan my work well, stay organized, and meet deadlines. ' +
+            'This helps me deliver quality results even when things get busy.'
     }
 ];
